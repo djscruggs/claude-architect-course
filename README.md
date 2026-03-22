@@ -10,13 +10,9 @@ Each domain is a self-contained prompt file that turns Claude into an expert ins
 
 1. Clone this repo
 2. Launch Claude Code in the project directory
-3. Tell Claude to read the domain file and follow the instructions:
+3. Claude will automatically detect your progress (if any) and offer to resume, or ask which domain to start with
 
-```
-read @domain-1.md and follow the instructions
-```
-
-Claude will ask about your experience level and adapt accordingly.
+No manual prompting needed — `CLAUDE.md` handles the startup flow automatically.
 
 ## Domains
 
@@ -34,4 +30,4 @@ Start with Domain 1 — it's worth the most on the exam.
 
 - Work through one domain per session
 - Answer the practice questions before reading ahead
-- At the end of a session, ask Claude to save a progress summary to a local file (e.g. `save my progress to progress.md`). At the start of your next session, tell Claude to read it: `read @progress.md and pick up where we left off`
+- At the end of a session, ask Claude to save your progress (`save my progress`). It will write a `progress.md` file locally. Next time you launch Claude Code, it will detect that file and offer to resume automatically.
