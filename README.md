@@ -1,6 +1,6 @@
 # Claude Certified Architect — Study Course
 
-This repo is based on a [thread by @hooeem](https://x.com/hooeem/article/2033198345045336559) covering the Claude Certified Architect (Foundations) exam curriculum. I converted it into a repo of structured prompt files so it's easy to use with Claude Code as an interactive instructor.
+This is based on a [thread by @hooeem](https://x.com/hooeem/article/2033198345045336559) covering the Claude Certified Architect (Foundations) exam curriculum. I converted it into a repo of structured prompt files so it's easy to use with Claude Code as an interactive instructor.
 
 ## How to use
 
