@@ -19,10 +19,10 @@ No manual prompting needed — `CLAUDE.md` handles the startup flow automaticall
 | File | Domain | Exam Weight |
 |------|--------|-------------|
 | `domain-1.md` | Agentic Architecture & Orchestration | 27% |
-| `domain-2.md` | Claude API & Model Configuration | — |
-| `domain-3.md` | MCP (Model Context Protocol) | — |
-| `domain-4.md` | Security, Trust & Safety | — |
-| `domain-5.md` | Production Deployment & Observability | — |
+| `domain-2.md` | Tool Design & MCP Integration | 18% |
+| `domain-3.md` | Claude Code Configuration & Workflows | 20% |
+| `domain-4.md` | Prompt Engineering & Structured Output | 20% |
+| `domain-5.md` | Context Management & Reliability | 15% |
 
 Start with Domain 1 — it's worth the most on the exam.
 
