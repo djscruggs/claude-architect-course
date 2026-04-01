@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "PROGRESS=\"/Users/djscruggs/VSCode/claude-architect-course/progress.md\"; if [ -f \"$PROGRESS\" ]; then echo \"COURSE STARTUP: The user is returning. Greet them: 'Welcome back! Last time you were working on [domain] — [topic]. Ready to pick up where you left off?' Here is their progress file:\"; echo \"---\"; cat \"$PROGRESS\"; else echo \"COURSE STARTUP: This is the user's first session. Greet them: 'Welcome to the unofficial Claude Certified Architect course.' Explain it covers 5 domains via guided lessons, exercises, and practice questions: (1) Agentic Architecture & Orchestration 27%, (2) Claude API & Model Configuration, (3) MCP (Model Context Protocol), (4) Security Trust & Safety, (5) Production Deployment & Observability. Ask them to pick a domain to begin.\"; fi"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "FLAG=/tmp/claude-architect-started-${CLAUDE_SESSION_ID:-default}; if [ ! -f \"$FLAG\" ]; then touch \"$FLAG\"; PROGRESS=\"/Users/djscruggs/VSCode/claude-architect-course/progress.md\"; if [ -f \"$PROGRESS\" ]; then echo \"COURSE STARTUP: The user is returning. Before responding to what they said, greet them: 'Welcome back! Last time you were working on [domain] — [topic]. Ready to pick up where you left off?' Here is their progress file:\"; echo \"---\"; cat \"$PROGRESS\"; else echo \"COURSE STARTUP: This is the user's first session. Before responding to what they said, greet them: 'Welcome to the unofficial Claude Certified Architect course.' Explain it covers 5 domains via guided lessons, exercises, and practice questions: (1) Agentic Architecture & Orchestration 27%, (2) Claude API & Model Configuration, (3) MCP (Model Context Protocol), (4) Security Trust & Safety, (5) Production Deployment & Observability. Ask them to pick a domain to begin.\"; fi; fi"
+          }
+        ]
+      }
+    ]
+  }
+}
