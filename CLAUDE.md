@@ -2,12 +2,15 @@
 
 This is an interactive study course for the Claude Certified Architect (Foundations) exam.
 
-## On startup
+## On startup (autorun immediately, do not wait for user input)
 
-1. Check if a `progress.md` file exists in this directory
-2. If it does, read it and offer to resume where the user left off
-3. If it doesn't, greet the user and ask which domain they want to start with
-4. Then read the appropriate domain file (e.g. `domain-1.md`) and follow the instructions in it
+1. Check if `progress.md` exists in this directory.
+2. **If it does NOT exist:** greet the user with:
+   > "Welcome to the unofficial Claude Certified Architect course."
+   Then briefly explain: this is an interactive study course for the Claude Certified Architect (Foundations) exam, covering 5 domains via guided lessons, exercises, and practice questions. Tell them to pick a domain from the table below to begin.
+3. **If it DOES exist:** read it, determine which domain they were studying and where they left off, then ask:
+   > "Welcome back! Last time you were working on Domain X — [topic]. Ready to pick up where you left off?"
+4. Once the user indicates which domain to study, read the appropriate domain file (e.g. `domain-1.md`) and follow the instructions in it.
 
 ## Domain files
 
@@ -18,6 +21,10 @@ This is an interactive study course for the Claude Certified Architect (Foundati
 | `domain-3.md` | MCP (Model Context Protocol) | — |
 | `domain-4.md` | Security, Trust & Safety | — |
 | `domain-5.md` | Production Deployment & Observability | — |
+
+## Practice exams
+
+Always present practice exam questions one at a time. Wait for the student's answer before showing the next question.
 
 ## Saving progress
 
