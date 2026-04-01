@@ -10,7 +10,8 @@ Each domain is a self-contained prompt file that turns Claude into an expert ins
 
 1. Clone this repo
 2. Launch Claude Code in the project directory
-3. Claude will automatically detect your progress (if any) and offer to resume, or ask which domain to start with
+3. Type "start"
+4. Claude will automatically detect your progress (if any) and offer to resume, or ask which domain to start with
 
 No manual prompting needed — `CLAUDE.md` handles the startup flow automatically.
 
